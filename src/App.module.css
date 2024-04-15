@@ -1,0 +1,58 @@
+*{
+  background-color: bisque;
+}
+
+h1{
+  text-align: center;
+  color: tomato;
+}
+
+/* ---------------------------- */
+.container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: tomato;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  white-space:pre-wrap;
+
+}
+
+.major-coin-item {
+  width: calc(33.333% - 20px); /* 3분의 1 크기로 설정하고 간격을 제외함 */
+  margin: 10px;
+  border: 1px solid #ccc; /* 선이 있는 사각형 스타일 */
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.major-coin-item h3 {
+  margin: 0;
+}
+
+.major-coin-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.search-result {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.search-result-item {
+  background-color: transparent;
+  border: 1px solid skyblue;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+}
